@@ -1,0 +1,671 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 19px;
+    background-color: rgb(0, 0, 0);
+    float: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a logo{
+    font-weight: bolder;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+}
+nav a logo corn{
+    color: rgb(255, 166, 0);
+}
+nav a logo fit{
+    color: white;
+}
+
+nav a logo img{
+    height: auto;
+    width: 50px;
+    margin-left: 4px;
+}
+
+nav a button{
+    display: none;
+}
+
+nav searchBar form{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav searchBar form input{
+    width: 600px;
+    padding-left: 30px;
+    height: 40px;
+    font-size: 25px;
+    border: solid rgb(28, 18, 0) 2px;
+    border-radius: 5px;
+}
+
+nav searchBar form input[type="submit"]{
+    background: url(img/icons/lupa.png);
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    margin-left: 12px;
+    font-size: 0%;
+}
+
+nav a botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a botoes p{
+    padding: 10px;
+    margin-left: 15px;
+    background-color: rgb(62, 62, 62);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+nav a botoes p:hover{
+    background-color: rgb(90, 90, 90);
+}
+
+nav a botoes botaoEspe p{
+    background-color: rgb(255, 166, 0);
+    color: black;
+}
+
+nav a botoes botaoEspe p:hover{
+    background-color: gold;
+}
+
+.upperbody{
+  background: linear-gradient(3deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.65)), url("img/FerroNoBuraco.jpeg");
+  background-repeat: no-repeat;
+  height: 1045px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.upperbody small{
+    background: linear-gradient(45deg, rgb(255, 166, 0), rgb(255, 226, 64));
+    font-size: 45px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.upperbody biggie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 70px;
+}
+.upperbody biggie pt1{
+    color: white;
+}
+
+.upperbody biggie pt2{
+    color: rgb(255, 166, 0);
+}
+
+.upperbody botaoEspe a{
+    padding: 10px;
+    background-color: rgb(255, 166, 0);
+    color: black;
+    border-radius: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.upperbody botaoEspe a:hover{
+    padding: 15px;
+    font-size: 40px;
+    border-radius: 25px;
+    margin-bottom: 0px;
+}
+
+.lowerbody{
+    background: linear-gradient(173deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65)), url(img/RoscaBahiana.jpeg);
+    background-repeat: no-repeat;
+    height: 1500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lowerbody onehalf{
+    display: flex;
+    flex-direction: column;
+}
+
+.lowerbody onehalf h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.lowerbody onehalf cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lowerbody onehalf cards card{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.lowerbody onehalf cards card img{
+    width: 300;
+    height: 210;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.lowerbody onehalf cards card especialidade{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: rgb(255, 166, 0);
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lowerbody onehalf cards card texto{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lowerbody onehalf cards card texto p{
+    font-size: 25px;
+    text-align: justify;
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.lowerbody onehalf cards card texto a{
+    background-color: rgb(255, 166, 0);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s;
+}
+
+.lowerbody onehalf cards card texto a:hover{
+    padding: 7px;
+    font-size: 32px;
+}
+
+.lowerbody twohalf{
+    display: flex;
+    justify-content: space-between;
+    margin: 120px;
+    margin-top: 100px;
+}
+
+.lowerbody twohalf img{
+    width: 650px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.lowerbody twohalf p{
+    color: white;
+    font-size: 65px;
+    text-align: justify;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* footer */ 
+
+footer {
+background-color: rgb(0, 0, 0);
+
+}
+
+footer .container .footer-name .Corn{
+  color: rgb(255, 255, 255);
+ 
+
+}
+
+footer .container .footer-name{
+display: flex;
+justify-content: center;
+    padding-top: 90px;
+flex-direction: column;
+align-items: center;
+background-color: rgb(0, 0, 0);
+
+}
+footer .container .footer-name .Corn-footer{
+color: gold;
+display: flex;
+align-items: center;
+}
+footer .container .footer-name .logo-footer{
+    font-size: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+.container-logo img{
+background-color: rgb(0, 0, 0);
+width: 60px;
+background-color: rgb(0, 0, 0);
+color: white;
+
+}
+.container-logo{
+display: flex;
+align-items: center;
+}
+.container-logo .x-logo-twitter{
+    padding: 2px;
+  
+
+}
+
+.container-logo .youtube-logo{
+  width: 60px;
+  height: 55px;
+  
+ 
+}
+
+.container .hh{
+   
+ color: rgb(255, 255, 255);
+margin-bottom: 40px;
+margin-top: 40px;
+display: flex;
+align-items: center;
+
+}
+
+
+
+hr{
+    display: flex;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+hr{
+    display: flex;
+}
+.dedo-do-pe{
+ color: #ece8d2;
+cursor: wait;
+
+
+
+}
+
+
+footer .container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container2 .dedo-do-pe h2{
+    color: gold;
+    margin-bottom: 10px;
+   
+}
+
+.container2 .dedo-do-pe h3{
+    margin-bottom: 5px;
+    
+}
+
+.container2 .dedo-do-pe a{
+    text-decoration: none;
+    color: white;
+
+
+    margin-bottom: 5px;
+}
+input[type="submit"]{
+outline: none;
+cursor: pointer;
+color: black;
+background-color: gold;
+padding: 7px;
+border-radius: 10px;
+
+}
+
+@media (max-width: 1024px){
+
+    nav{
+        padding: 15px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a logo{
+        font-size: 28px;
+    }
+
+    nav searchBar{
+        display: none;
+    }
+
+    nav a botoes{
+        display: none;
+    }
+
+    nav a button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        color: white;
+        background: none;
+        border: none;
+    }
+
+    /* HERO */
+
+    .upperbody{
+        height: 900px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .upperbody small{
+        font-size: 35px;
+    }
+
+    .upperbody biggie{
+        font-size: 55px;
+    }
+
+    .upperbody botaoEspe a{
+        font-size: 25px;
+    }
+
+    /* LOWERBODY */
+
+    .lowerbody{
+        height: auto;
+        padding-bottom: 80px;
+    }
+
+    .lowerbody onehalf h1{
+        font-size: 70px;
+        margin: 70px 20px;
+    }
+
+    /* ===== CARDS ===== */
+
+    .lowerbody onehalf cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .lowerbody onehalf cards card{
+        width: 320px;
+    }
+
+    /* IMAGENS DOS CARDS */
+
+    .lowerbody onehalf cards card img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .lowerbody onehalf cards card especialidade{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .lowerbody onehalf cards card texto p{
+        font-size: 22px;
+        margin: 25px;
+    }
+
+    .lowerbody onehalf cards card texto a{
+        font-size: 22px;
+    }
+
+    /*
+       RESULTADO:
+       [CARD] [CARD]
+           [CARD]
+    */
+
+    /* SEÇÃO FINAL */
+
+    .lowerbody twohalf{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin: 80px 40px;
+    }
+
+    .lowerbody twohalf img{
+        width: 350px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .lowerbody twohalf p{
+        font-size: 45px;
+        margin-left: 0;
+    }
+   footer .container2{
+   flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        text-align: center;
+}
+}
+
+
+
+@media(max-width:768px){
+
+    nav{
+        padding: 10px;
+        align-items: center;
+    }
+
+    nav a logo{
+        font-size: 24px;
+    }
+
+    nav a logo img{
+        width: 35px;
+    }
+
+    /* ESCONDE PESQUISA */
+
+    nav searchBar form input{
+        display: none;
+    }
+
+    nav searchBar form input[type="submit"]{
+        display: none;
+    }
+
+    /* ESCONDE BOTÕES */
+
+    nav a botoes p{
+        display: none;
+    }
+
+    /* MENU */
+
+    nav a button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        color: white;
+        background: none;
+        border: none;
+    }
+
+    /* HERO */
+
+    .upperbody{
+        height: 850px;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .upperbody small{
+        font-size: 28px;
+    }
+
+    .upperbody biggie{
+        font-size: 42px;
+        margin: 0;
+    }
+
+    .upperbody botaoEspe a{
+        font-size: 22px;
+        padding: 12px 20px;
+    }
+
+    /* TITULO */
+
+    .lowerbody onehalf h1{
+        font-size: 50px;
+        margin: 50px 20px;
+        text-align: center;
+    }
+
+    /* CARDS */
+
+    .lowerbody onehalf cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .lowerbody onehalf cards card{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .lowerbody onehalf cards card img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .lowerbody onehalf cards card especialidade{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .lowerbody onehalf cards card texto p{
+        font-size: 20px;
+        margin: 25px;
+        text-align: center;
+    }
+
+    .lowerbody onehalf cards card texto a{
+        font-size: 20px;
+    }
+
+    /* ===== ÚLTIMA SEÇÃO ===== */
+
+    .lowerbody twohalf{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin: 60px 20px;
+    }
+
+    /* TEXTO */
+
+    .lowerbody twohalf p{
+        font-size: 38px;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* IMAGEM EMBAIXO */
+
+    .lowerbody twohalf img{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-logo{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+     footer .container2{
+    display: flex;
+    flex-direction: column; /* 🔥 isso resolve */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+}
